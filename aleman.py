@@ -111,6 +111,7 @@ def calcular_amortizacion_aleman(monto, tasa, n, frecuencia, diapago, fechaprime
     # Devolver la tabla de amortización y la amortización total
     return tabla_amortizacion, round(amortizacion_total, 2)
 
+#Valores de ejemplo
 monto = 100000
 tasa = 15.6
 numcuotas = 60
