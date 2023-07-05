@@ -35,13 +35,13 @@ def sumar_dias_faltantes(fecha,diafijo):
 def calcular_amortizacion_frances(monto, tasa, n, frecuencia, diapago, fechaprimerpago):
     #Obtener la primera fecha mínima de pago
     fechamaxima = fechaprimerpago
-    if frecuencia == 12: #Si el plazo es mensual
+    if frecuencia == 12: #mensual
         fechaminima = fechamaxima - timedelta(days=30)
-    elif frecuencia == 24: #Si el plazo es Quicenal
+    elif frecuencia == 24: #Quicenal
         fechaminima = fechamaxima - timedelta(days=15)
-    elif frecuencia == 52: #Si el plazo es Semanal
+    elif frecuencia == 52: #Semanal
         fechaminima = fechamaxima - timedelta(days=7)
-    elif frecuencia == 360 or frecuencia == 365: #Si el plazo es diario
+    elif frecuencia == 360 or frecuencia == 365: #diario
         fechaminima = fechamaxima - timedelta(days=1)
     else:
         fechaminima = fechamaxima
