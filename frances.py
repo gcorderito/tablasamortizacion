@@ -119,6 +119,7 @@ frecuencia = 12
 diapago = 15
 fechaprimerpago = date(2023,4,15)
 
+#Calcula la tabla
 tabla, amortizacion_total = calcular_amortizacion_frances(monto, tasa, numcuotas, frecuencia, diapago, fechaprimerpago)
 
 print("Tabla de amortización:")
